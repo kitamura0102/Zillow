@@ -1,0 +1,40 @@
+/* Colors #006AFF,#fff */
+
+*{
+    box-sizing: content-box;
+    margin: 0 0 20px 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.navbar a, li{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    color: black;
+    flex-wrap: nowrap;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+
+}
+
+.navbar img{
+    width: 10%;
+    padding: 0 100px;
+    
+}
+
+.navbar{
+    display: flex;
+    border: black 1px solid;
+    
+
+}

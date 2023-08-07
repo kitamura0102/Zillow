@@ -9,6 +9,11 @@
       type="image/svg+xml."
       href="/images/zillow-seeklogo.com.svg"
     />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f3b2bd313f.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
@@ -25,11 +30,9 @@
             <li class="left-side-nav"><a href="#">Sell</a></li>
             <li class="left-side-nav"><a href="#">Home Loans</a></li>
             <li class="left-side-nav"><a href="#">Agent Finder</a></li>
-            <img
-              class="navbar-image"
-              src="/images/Zillow-logo-big.png"
-              alt="Logo"
-            />
+            <div class="navbar-image">
+              <img src="/images/Zillow-logo-big.png" alt="Logo" />
+            </div>
             <li class="right-side-nav"><a href="#">Manage Rentals</a></li>
             <li class="right-side-nav"><a href="#">Advertise</a></li>
             <li class="right-side-nav"><a href="#">Help</a></li>
@@ -37,6 +40,21 @@
           </ul>
         </div>
       </nav>
+      <section class="home-looking">
+        <div class="front-image"></div>
+        <form action="">
+          <div class="input-container">
+            <input 
+              type="text"
+              id="search-box-input"
+              required
+              placeholder="Enter an address, neighborhood, city, or ZIP code " 
+            />
+            <button class="input-icon"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+            
+          </div>
+        </form>
+      </section>
     </header>
   </body>
 </html>

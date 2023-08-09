@@ -19,7 +19,7 @@ li {
   line-height: 3;
   max-width: max-content;
   display: flex;
-  flex-basis: 130px;
+  flex: 0 0 150px;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@ li {
 .home-looking {
   background-image: url(/images/front-image-1.jpg);
   width: 100%; /* Set the width of the container */
-  height: 600px; /* Set the height of the container */
+  height: 450px; /* Set the height of the container */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,23 +71,24 @@ li {
 
 .input-container{
   position: relative;
-  width: 600px;
+  min-width: 80vh;
 }
 
 .input-container input{
-  width: 100%;
-  height: 70px;
+  width: 90%;
+  height: 80px;
   border-radius: 5px;
   border: none;
   text-align: start;
   font-size: 18px;
   padding-left: 30px;
+  font-weight: bold;
 }
 
 .input-icon {
   position: absolute;
   top: 50%;
-  right: -5%;
+  right: 5%;
   transform: translateY(-50%);
   pointer-events: auto;
   height: 100%;
@@ -96,4 +97,77 @@ li {
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* recomend section */
+
+.recomendations{
+height: 447px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.recomend-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.recomend-text{
+  display: flex ;
+  width: 400px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  
+  align-items: center;
+  
+}
+.recomend-text h3{
+  font-size: 1.3rem;
+}
+.recomend-text p{
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: gray;
+}
+.recomend-text button{
+ font-size: 1rem;
+ font-weight: bold;
+ width: 25%;
+ height: 50px ;
+ margin-top: 10px;
+ border: #006AFF solid 2px;
+ border-radius: 5px;
+ color: #006AFF;
+ background-color: white;
+
+}
+.recomend-images{
+  display: flex;
+}
+.recomend-image{
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5); 
+}
+.recomend-image-1{
+  background-image: url(/images/recomend-1.jpg);
+  
+  
+}
+.recomend-image-2{
+  background-image: url(/images/recomend-2.jpg);
+}
+.recomend-image-3{
+  background-image: url(/images/recomend-3.jpg);
+  
 }

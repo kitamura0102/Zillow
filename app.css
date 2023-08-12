@@ -19,7 +19,7 @@ li {
   line-height: 3;
   max-width: max-content;
   display: flex;
-  flex: 0 0 150px;
+  flex-grow: 1;
   text-align: center;
 }
 
@@ -69,14 +69,14 @@ li {
   align-items: center;
 }
 
-.input-container{
+.input-container {
   position: relative;
-  min-width: 80vh;
+  width: 700px;
 }
 
-.input-container input{
+.input-container input {
   width: 90%;
-  height: 80px;
+  height: 70px;
   border-radius: 5px;
   border: none;
   text-align: start;
@@ -100,74 +100,122 @@ li {
 }
 
 /* recomend section */
-
-.recomendations{
-height: 447px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-}
-.recomend-flex{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.recomend-text{
-  display: flex ;
-  width: 400px;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  
-  align-items: center;
-  
-}
-.recomend-text h3{
+.recomend-text h3 {
   font-size: 1.3rem;
+  line-height: 4;
 }
-.recomend-text p{
+.recomend-text p {
   font-size: 1.1rem;
   margin-top: 10px;
   color: gray;
 }
-.recomend-text button{
- font-size: 1rem;
- font-weight: bold;
- width: 25%;
- height: 50px ;
- margin-top: 10px;
- border: #006AFF solid 2px;
- border-radius: 5px;
- color: #006AFF;
- background-color: white;
+.recomend-text button {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 25%;
+  height: 50px;
+  margin-top: 10px;
+  border: #006aff solid 2px;
+  border-radius: 5px;
+  color: #006aff;
+  background-color: white;
+  cursor: pointer;
+}
+.recomend-text {
+  text-align: center;
+  
+}
+.recomendations {
+  height: 395px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+  
+}
 
-}
-.recomend-images{
-  display: flex;
-}
 .recomend-image{
-  display: flex;
-  flex-wrap: wrap;
-  width: 250px;
-  height: 250px;
+  height: 65%;
   margin: 20px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(0.5); 
+  filter: grayscale(0.5);
+  flex: 0 0 250px;
 }
-.recomend-image-1{
+.recomend-image-1 {
   background-image: url(/images/recomend-1.jpg);
-  
-  
 }
-.recomend-image-2{
+.recomend-image-2 {
   background-image: url(/images/recomend-2.jpg);
-}
-.recomend-image-3{
-  background-image: url(/images/recomend-3.jpg);
   
+  
+}
+.recomend-image-3 {
+  background-image: url(/images/recomend-3.jpg);
+
+ 
+}
+
+/* Options */
+
+.options img {
+  width: 100%;
+  border-radius: 5px;
+}
+.options h3 {
+  font-size: 1.4rem;
+  line-height: 4;
+}
+
+.options p {
+  font-size: 1rem;
+  line-height: 1;
+  width: 340px;
+  padding-left: 20px;
+}
+
+.options button {
+  font-size: 1rem;
+  height: 45px;
+  width: 40%;
+  margin-top: 40px;
+  border: #006aff solid 1px;
+  border-radius: 5px;
+  color: #006aff;
+  font-weight: 700;
+  background-color: white;
+}
+.options {
+  background-color: #f9f9fb;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: wrap row;
+}
+
+.option-box {
+  flex: 0 1 380px;
+  cursor: pointer;
+  height: 80%;
+  background-color: white;
+  margin: 20px;
+  padding-top: 40px;
+  border-radius: 5px;
+  border: solid 0.01px none;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.option-box:hover {
+  transform: scale(1.1); /* Ajusta el valor según tus necesidades */
+}
+
+.option-box:hover button {
+  background-color: #006aff;
+  color: white;
+  transition: 0.2s ease;
 }

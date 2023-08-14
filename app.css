@@ -273,7 +273,7 @@ li {
   .nav-links.active {
     display: block; /* Mostrar la barra de navegación cuando el botón se hace clic */
   }
-  #sing-in-button{
+  #sing-in-button {
     display: block;
   }
 }
@@ -296,5 +296,7 @@ li {
   .max-box {
     display: none;
   }
-
+  .recomend-image{
+    display: none;
+  }
 }

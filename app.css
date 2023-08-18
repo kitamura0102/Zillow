@@ -1,9 +1,8 @@
-/* Colors #006AFF,#fff */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -21,7 +20,7 @@ li {
   max-width: max-content;
   display: flex;
   flex-grow: 1;
-  text-align: center;
+  
 }
 
 .nav-links ul {
@@ -131,7 +130,7 @@ li {
 .recomend-text button {
   font-size: 1rem;
   font-weight: bold;
-  width: 25%;
+  width: 40%;
   height: 50px;
   margin-top: 10px;
   border: #006aff solid 2px;
@@ -158,8 +157,8 @@ li {
   margin: 20px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   filter: contrast(0.6);
+
   flex: 0 1 250px;
 }
 .recomend-image-1 {
@@ -234,10 +233,51 @@ li {
   transition: 0.2s ease;
 }
 
+/* burger buttom */
+.burger-buttom {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items:center;
+  padding-left: 40px;
+  z-index: 1;
+  
+}
+.close-btn{
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  
+  
+  
+}
+.burger-buttom a, li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #006aff;
+  line-height: 3;
+  margin-top: 10px;
+  text-align: center;
+  
+  
+}
+
+.text-align-center{
+  
+}
+
 /* MEDIAS */
 @media (max-width: 1310px) {
   .navbar-image {
     padding: 0 100px;
+  }
+  .burger-buttom{
+    display: none;
   }
 }
 
@@ -249,12 +289,14 @@ li {
   .options {
     height: 1150px;
   }
+  
 }
 
 @media (max-width: 1110px) {
   .navbar-image {
     padding: 0 1px;
   }
+  
 }
 
 @media (max-width: 1012px) {
@@ -273,9 +315,13 @@ li {
   .nav-links.active {
     display: block; /* Mostrar la barra de navegación cuando el botón se hace clic */
   }
+  .burger-buttom{
+    display: none;
+  }
   #sing-in-button {
     display: block;
   }
+  
 }
 @media (max-width: 856px) {
   .options {
@@ -284,11 +330,13 @@ li {
   .input-container {
     width: 600px;
   }
+  
 }
 
 @media (max-width: 650px) {
   .input-container {
     width: 400px;
+    
   }
   .min-box {
     display: block;
@@ -296,7 +344,8 @@ li {
   .max-box {
     display: none;
   }
-  .recomend-image{
+  .recomend-image {
     display: none;
   }
+  
 }
